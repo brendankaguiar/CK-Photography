@@ -1,0 +1,89 @@
+<!--OK Photography HTML-->
+<!--Comments and editing by Brendan Aguiar-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CK Photography</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="hamburger.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop"><img src="exit_menu.svg" alt="exit menu"> </li>
+                    <li> <a href="index.html">Home and Services</a></li>
+                    <li> <a href="blog.html">Blog</a></li>
+                    <li> <a href="gallery.html">Gallery</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h1>CK Photography</h1>
+            <p class="subhead">Capturing Your Moment</p>
+            <a href="#" class="cta">Book now!</a>
+        </section>
+    </div>
+    <div class="black-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="weddings.svg" alt="wedding graphic">
+                    <p>Don't fret the over details. Your wedding deserves the best and we have you captured.</p>
+                </li>
+                <li>
+                    <img src="birthdays.svg" alt="birthday graphic">
+                    <p>Any party atmosphere, we've got you covered.</p>
+                </li>
+                <li>
+                    <img src="family_pets.svg" alt="family and pets graphic">
+                    <p>We'll make sure you don't forget the most important members of the family.</p>
+                </li>
+                <li>
+                    <img src="events_more.svg" alt="events and more graphic">
+                    <p>Never a dull moment when you're there.</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Capture your favorite moment</h2>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container"></div>
+            <p class="address">2238 flagg dr. Reno, NV 89502<br>USA</p>
+            <ul class="footer-links">
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function (e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function (e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
